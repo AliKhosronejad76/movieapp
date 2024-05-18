@@ -1,17 +1,18 @@
 import Menu from "./Menu"
 import Logo from "./Logo"
 import Actions from "./Actions"
-
+import DrawerIcon from "./DrawerIcon"
 export default function Header(){
     return(
-        <header className="bg-[#141414] h-[100px] text-white px-16 flex justify-between items-center">
+        <header className="bg-[#141414] h-[100px] text-white px-3 lg:px-16 flex justify-between items-center">
               
-                <div className="flex justify-start items-center h-full ">
+                <div className="w-[50%] lg:w-[60%] flex justify-start items-center h-full  ">
                     <Logo/>
                     <Menu/>
                 </div>
-                <div className="flex items-center justify-start">
+                <div className="w-[50%] lg:w-[40%] flex items-center justify-end">
                     <Actions/>
+                    <DrawerIcon/>
                 </div>
         </header>
     )
