@@ -1,5 +1,4 @@
 import Layout from "./components/layout/Layout"
-
 import { useGetNowPlayingQuery } from "./app/movieApi"
 
 function App() {
@@ -8,7 +7,9 @@ function App() {
 
     return(
         <Layout>
-            
+            <div className="bg-red-600 w-full">
+               
+            </div>
         </Layout>
     )
 }
