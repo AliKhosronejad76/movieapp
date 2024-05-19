@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { movieApi } from './services/movieApi';
 
-export default configureStore({
+const store = configureStore({
   reducer: {
     [movieApi.reducerPath]: movieApi.reducer ,
   },
@@ -10,3 +10,5 @@ export default configureStore({
     getDefaultMiddleware().concat(movieApi.middleware),
 
 });
+
+export default store

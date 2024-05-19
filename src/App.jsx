@@ -1,9 +1,11 @@
 import Layout from "./components/layout/Layout"
-import { useGetNowPlayingQuery } from "./app/services/movieApi"
+
+import { useGetNowPlayingQuery } from "./app/movieApi"
 
 function App() {
-    const re = useGetNowPlayingQuery(1)
-    console.log("hello")
+    const res =   useGetNowPlayingQuery()
+    console.log(res)
+
     return(
         <Layout>
             
