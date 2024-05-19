@@ -3,6 +3,7 @@ import { useGetNowPlayingQuery } from "./app/movieApi"
 
 function App() {
     const res =   useGetNowPlayingQuery()
+    console.log(res)
     return(
         <Layout>
           

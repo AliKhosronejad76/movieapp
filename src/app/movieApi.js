@@ -15,10 +15,28 @@ export const movieApi = createApi({
         getNowPlaying : builder.query({
             query : (pageCount = 1)=> `/movie/now_playing?language=en-US&page=${pageCount}`,
         })
+        ,
+        getPopular : builder.query({
+            query : (pageCount = 1)=> `/movie/popular?language=en-US&page=${pageCount}`,
+        })
+        ,
+
+        getTopRated : builder.query({
+            query : (pageCount = 1)=> `/movie/top_rated?language=en-US&page=${pageCount}`,
+        })
+        ,
+        getUpComing:builder.query({
+            query : (pageCount = 1)=> `/movie/top_rated?language=en-US&page=${pageCount}`,
+        })
     })
 })
 
 export const   {
     useGetNowPlayingQuery ,
+    useGetPopularQuery ,
+    useGetTopRatedQuery ,
+    useGetUpComingQuery , 
+
 
 } = movieApi
+
