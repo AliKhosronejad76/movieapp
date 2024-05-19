@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Header from "./header/Header"
+import Header from "../header/Header"
 import Footer from "../footer/Footer"
 import Drawer from "../drawer/Drawer"
 
