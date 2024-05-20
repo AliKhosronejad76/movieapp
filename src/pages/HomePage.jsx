@@ -1,8 +1,9 @@
+import BannerSlider from "../components/bannerSlider/BannerSlider"
 
 export default function HomePage(){
     return(
-        <>
-         thi is home pahe on branch routing
-        </>
+       <>
+        <BannerSlider/>
+       </>
     )
 }
