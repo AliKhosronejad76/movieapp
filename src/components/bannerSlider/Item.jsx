@@ -1,10 +1,10 @@
 export default function Item({img}){
     return(
-        <div className="relative h-[500px]">
+        <div className="relative h-[400px] lg:h-[500px]">
             <div className="bg-[#000] opacity-50 absolute top-0 bottom-0 right-0 left-0 z-40 w-full h-full"></div>
             <img src={img} className="relative h-full w-full object-cover bg-center " />
 
-            <div className="absolute z-50 top-20 bottom-0 left-0 right-0  flex items-start justify-start px-2 md:px-4 lg:px-12">
+            <div className="absolute z-50 top-16 lg:top-20 bottom-0 left-0 right-0  flex items-start justify-start px-2 md:px-4 lg:px-12">
                 
                 <div className="w-full text-white ">
                     <h1 className="text-3xl  lg:text-5xl mb-4">Lord of Rings III</h1>
